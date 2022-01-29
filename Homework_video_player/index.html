@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <body> 
+    <div class="player" id="myvideo">
+      <video class="player__video viewer" src="video/video.mp4"></video>
+      <div class="player__controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <button class="player__button toggle" title="Toggle Play">&#x25BA;</button>
+        <input class="player__slider" type="range" name="volume" min="0" max="1" step="0.05" value="1">
+        <button class="player__button screen" id="full_screen" onclick="updateButtonScreen();">&rect;</button>
+      </div>
+      <script src="js/script_drag.js"></script>
+    </div>
+  </body>
+</head>
